@@ -2,6 +2,8 @@ import PostTags from "../../components/PostTags"
 import Skeleton from "../../components/Skeleton"
 import Image from 'next/image'
 
+import { IPostFields } from "../../src/schema/generated/contentful";
+
 import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from "@contentful/rich-text-types"
@@ -11,19 +13,18 @@ const client = createClient({
 	accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
 })
 
-export default function Blog({ post }) {
+export default function Blog({ post }:any) {
 	if (!post) return <Skeleton />
 
 	const { content, slug, thumbnail, title } = post.fields
 	const { tags } = post.metadata
 
 	const { createdAt } = post.sys
-    const dateOptions = { dateStyle: 'medium' }
-    const date = new Date(createdAt).toLocaleString('default', dateOptions)
+    const date = new Date(createdAt).toLocaleString('default', { dateStyle: 'medium' })
 
 	const renderOption = {
 		renderNode: {
-			[BLOCKS.EMBEDDED_ASSET]: (node, children) => {
+			[BLOCKS.EMBEDDED_ASSET]: (node:any, children:any) => {
 				return (
 					<div className="text-center">
 						<Image 
@@ -55,7 +56,7 @@ export default function Blog({ post }) {
 }
 
 export const getStaticPaths = async () => {
-	const res = await client.getEntries({ 
+	const res = await client.getEntries<IPostFields>({ 
 		content_type: 'post'
 	})
 
@@ -71,7 +72,7 @@ export const getStaticPaths = async () => {
 	}
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }:any ) {
 	const { items } = await client.getEntries({
 		content_type: 'post',
 		'fields.slug': params.slug
