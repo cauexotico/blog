@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply text-gray-700 bg-gray-50 tracking-tight 
+}
+
+a {
+    @apply ease-linear duration-75
+}
+
+a:hover, a:focus{
+    @apply text-indigo-500
+}
+
+/* .post-content p, 
+.post-content h6, 
+.post-content h5, 
+.post-content h4, 
+.post-content h3, 
+.post-content h2, 
+.post-content h1,
+.post-content hr
+{
+    margin-bottom: 1.25rem;        
+}
+
+.post-content blockquote {
+    @apply 
+} */
