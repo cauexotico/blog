@@ -8,7 +8,7 @@ const client = createClient({
 	accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
 })
 
-export default function Tag({ tag, posts }:any) {
+export default function Tag({ tag, posts = [] }:any) {
 	
 	return (
 		<section className="mt-4 md:mt-8 max-w-screen-xl mx-auto px-5">
