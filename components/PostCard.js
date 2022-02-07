@@ -12,7 +12,7 @@ function Post({post}) {
 
     return (
         <article className="w-full max-w-screen-md cursor-pointer">
-            <Link href={'/blog/' + slug }>
+            <Link href={'/posts/' + slug }>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <div className="flex-none">
                         <Image 

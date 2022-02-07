@@ -7,6 +7,7 @@ function Footer() {
                     <ul className="flex flex-wrap flex-row justify-center gap-4 font-bold text-center">
                         <li><a target="_blank" rel="noopener" href="https://www.facebook.com/khauegil.poerner/">facebook</a></li>
                         <li><a target="_blank" rel="noopener" href="https://www.instagram.com/k_nadolny/">instagram</a></li>
+                        <li><a target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=5542991336623&text=Belo%20blog%20amigo%2C%20bora%20conversar%3F">whatsapp</a></li>
                         <li><a target="_blank" rel="noopener" href="https://twitter.com/k_poerner">twitter</a></li>
                         <li><a target="_blank" rel="noopener" href="https://github.com/Fellds">github</a></li>
                         <li><a target="_blank" rel="noopener" href="mailto:khaue.po@hotmail.com">email</a></li>

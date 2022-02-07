@@ -15,7 +15,8 @@ function Header() {
             <nav>
                 <ul className="flex gap-4 font-bold">
                     <li><Link href="/"><a className={router.pathname == "/" ? "text-indigo-500" : ""}>home</a></Link></li>
-                    <li><Link href="/blog"><a className={router.pathname == "/blog" ? "text-indigo-500" : ""}>blog</a></Link></li>
+                    <li><Link href="/sobre"><a className={router.pathname == "/sobre" ? "text-indigo-500" : ""}>sobre</a></Link></li>
+                    <li><Link href="/posts"><a className={router.pathname == "/posts" ? "text-indigo-500" : ""}>posts</a></Link></li>
                 </ul>
             </nav>
         </header>
