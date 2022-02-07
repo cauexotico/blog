@@ -58,6 +58,6 @@ export async function getStaticProps({ params }:any) {
 			tag: params.tag, 
 			posts: items
 		},
-		revalidate: 1
+		revalidate: 60
 	}
 }
