@@ -7,7 +7,7 @@ export default function Blog({ posts }:any) {
 	return (
 		<section className="mt-4 md:mt-8 max-w-screen-xl mx-auto px-5">
 
-			<div className="flex flex-col gap-8 md:gap-8">
+			<div className="flex flex-col gap-16">
 				{posts.map((post: { sys: { id: Key | null | undefined } }) => (
 					<PostCard key={post.sys.id} post={post}/>
 				))}

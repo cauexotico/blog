@@ -10,6 +10,9 @@ export interface IPostFields {
   /** Slug */
   slug: string;
 
+  /** Excerpt */
+  excerpt: string;
+
   /** Thumbnail */
   thumbnail: Asset;
 
@@ -36,6 +39,6 @@ export interface IPost extends Entry<IPostFields> {
 
 export type CONTENT_TYPE = "post";
 
-export type LOCALE_CODE = "en-US";
+export type LOCALE_CODE = "pt-BR";
 
-export type CONTENTFUL_DEFAULT_LOCALE_CODE = "en-US";
+export type CONTENTFUL_DEFAULT_LOCALE_CODE = "pt-BR";
