@@ -14,7 +14,7 @@ function Post({post}) {
         <article className="w-full max-w-screen-md cursor-pointer">
             <Link href={'/posts/' + slug }>
                 <div className="flex flex-col sm:flex-row gap-x-4">
-                    <div className="flex-none">
+                    <div className="flex-none w-2/12 hidden md:block">
                         <Image 
                             src={ 'https:' + thumbnail.fields.file.url }
                             width={ thumbnail.fields.file.details.image.width }

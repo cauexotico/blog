@@ -17,7 +17,7 @@ export default function Home() {
 					
 					<p className="mb-4">Hoje sou um <strong>desenvolvedor pleno</strong> trabalhando com foco em <strong>sistemas web</strong>.</p>
 					<p className="mb-4">Possuo conhecimentos em <strong>HTML e CSS, PostgreSQL e MySQL, PHP (Laravel e Wordpress),</strong> Infraestrutura em Nuvem <strong>(AWS)</strong> e diversas outras tecnologias como <strong>integrações de sistemas e e-commerce</strong>.</p>
-					<p className="mb-4">Trabalho em uma <a target="_blank" rel="noopener" href="https://girafacomunicacao.com.br">agência de comunicação</a>, onde consigo aplicar todo conhecimento nos mais variados projetos de <strong>grandes clientes</strong> da região. É nesse lugar também que consigo me aperfeiçoar cada vez mais com todos os <strong>desafios</strong> que aparecem diariamente.</p>
+					<p className="mb-4">Trabalho em uma <a className="underline" target="_blank" rel="noopener" href="https://girafacomunicacao.com.br">agência de comunicação</a>, onde consigo aplicar todo conhecimento nos mais variados projetos de <strong>grandes clientes</strong> da região. É nesse lugar também que consigo me aperfeiçoar cada vez mais com todos os <strong>desafios</strong> que aparecem diariamente.</p>
 					<p>Faço alguns trabalhos também como <strong>freelancer</strong>, se precisar de algo é só entrar em contato!</p>
 				</div>
 			</div>
