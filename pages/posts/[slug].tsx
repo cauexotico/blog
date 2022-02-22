@@ -1,6 +1,7 @@
 import PostTags from "../../components/PostTags"
 import Skeleton from "../../components/Skeleton"
 import Image from 'next/image'
+import Head from 'next/head'
 
 import { IPostFields } from "../../src/schema/generated/contentful";
 
@@ -39,19 +40,25 @@ export default function Blog({ post }:any) {
 	}
 	  
 	return (
-		<section className="mt-4 md:mt-8 max-w-screen-md mx-auto px-5">
-			<div className="mb-8">
-				<h2 className="text-2xl md:text-4xl font-bold tracking-tighter text-slate-900">{ title }</h2>
-				<div className="flex justify-between flex-wrap gap-2 mt-2">
-					<PostTags tags={tags} />
-					<span className="text-gray-400 text-xs">{ date }</span>
+		<>
+			<Head>
+				<title>Cauexotico | { title }</title>
+			</Head>
+
+			<section className="mt-4 md:mt-8 max-w-screen-md mx-auto px-5">
+				<div className="mb-8">
+					<h2 className="text-2xl md:text-4xl font-bold tracking-tighter text-slate-900">{ title }</h2>
+					<div className="flex justify-between flex-wrap gap-2 mt-2">
+						<PostTags tags={tags} />
+						<span className="text-gray-400 text-xs">{ date }</span>
+					</div>
+					<hr className="mt-8" />
 				</div>
-				<hr className="mt-8" />
-			</div>
-			<div className="prose-lg md:prose-xl">
-				{documentToReactComponents(content, renderOption)}
-			</div>
-		</section>
+				<div className="prose-lg md:prose-xl">
+					{documentToReactComponents(content, renderOption)}
+				</div>
+			</section>
+		</>
   	)
 }
 
