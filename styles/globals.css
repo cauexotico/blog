@@ -29,3 +29,35 @@ a:hover, a:focus{
 .post-content blockquote {
     @apply 
 } */
+
+/* .rainbow-letters span:nth-child(10n + 1) {
+color: #ef5350;
+}
+
+.rainbow-letters span:nth-child(10n + 2) {
+color: #ab47bc;
+}
+
+.rainbow-letters span:nth-child(10n + 3){
+color: #651fff;
+}
+
+.rainbow-letters span:nth-child(10n + 5){
+color: #3949ab;
+}
+
+.rainbow-letters span:nth-child(10n + 4) {
+color: #2196f3;
+}
+
+.rainbow-letters span:nth-child(10n + 6){
+color: #00bcd4;
+}
+
+.rainbow-letters span:nth-child(10n + 7){
+color: #4caf50;
+}
+
+.rainbow-letters span:nth-child(10n + 8){
+color: #ffc107;
+} */
